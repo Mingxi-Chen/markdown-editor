@@ -148,19 +148,21 @@ export const ExportButtons: React.FC<ExportButtonsProps> = ({ markdown }) => {
     <div className="flex gap-2">
       <button
         onClick={exportAsHTML}
-        className="flex items-center gap-2 px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-2 bg-blue-600 text-white rounded-lg hover:bg-blue-700 transition-colors text-sm"
         title="Export as HTML"
       >
         <FileText size={16} />
-        HTML
+        <span className="hidden sm:inline">HTML</span>
+        <span className="sm:hidden">HTML</span>
       </button>
       <button
         onClick={exportAsPDF}
-        className="flex items-center gap-2 px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors"
+        className="flex items-center gap-1 sm:gap-2 px-2 sm:px-3 py-2 bg-red-600 text-white rounded-lg hover:bg-red-700 transition-colors text-sm"
         title="Export as PDF"
       >
         <Download size={16} />
-        PDF
+        <span className="hidden sm:inline">PDF</span>
+        <span className="sm:hidden">PDF</span>
       </button>
     </div>
   );

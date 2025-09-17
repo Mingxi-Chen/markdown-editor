@@ -25,9 +25,9 @@ export const MarkdownPreview: React.FC<MarkdownPreviewProps> = ({
 
   return (
     <div className="h-full overflow-auto bg-white dark:bg-gray-900">
-      <div className="p-6">
+      <div className="p-4 sm:p-6">
         <div
-          className="prose prose-gray dark:prose-invert max-w-none"
+          className="prose prose-gray dark:prose-invert max-w-none prose-sm sm:prose-base"
           style={{
             '--tw-prose-body': isDarkMode ? '#e5e7eb' : '#374151',
             '--tw-prose-headings': isDarkMode ? '#f9fafb' : '#111827',

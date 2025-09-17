@@ -8,3 +8,58 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+
+/* 移动端优化 */
+@media (max-width: 768px) {
+  /* 确保触控目标足够大 */
+  button {
+    min-height: 44px;
+  }
+  
+  /* 优化滚动条在移动设备上的显示 */
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background: rgba(156, 163, 175, 0.5);
+    border-radius: 3px;
+  }
+  
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(156, 163, 175, 0.7);
+  }
+}
+
+/* 横屏模式优化 */
+@media (max-width: 768px) and (orientation: landscape) {
+  .mobile-landscape-optimize {
+    height: calc(100vh - 100px);
+  }
+}
+
+/* 确保代码块在小屏幕上可以水平滚动 */
+.prose pre {
+  overflow-x: auto;
+}
+
+/* 优化表格在小屏幕上的显示 */
+.prose table {
+  font-size: 0.875rem;
+}
+
+@media (max-width: 640px) {
+  .prose table {
+    font-size: 0.75rem;
+  }
+  
+  .prose th,
+  .prose td {
+    padding: 0.25rem 0.5rem;
+  }
+}
