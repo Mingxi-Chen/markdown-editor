@@ -12,6 +12,11 @@ A modern, feature-rich markdown editor built with React, Vite, and TypeScript. T
 - **Local Storage**: Automatically saves your work locally
 - **Responsive Design**: Works great on desktop and mobile devices
 
+## Examples
+<img width="2048" height="1108" alt="example" src="https://github.com/user-attachments/assets/9d7eb70c-5f52-4c75-91b7-91a0c17cd51e" />
+<img width="713" height="957" alt="响应式1" src="https://github.com/user-attachments/assets/bc603d96-2165-4f53-a205-350f18ca5e74" />
+
+
 ## Technology Stack
 
 - **Frontend**: React 18 + TypeScript
